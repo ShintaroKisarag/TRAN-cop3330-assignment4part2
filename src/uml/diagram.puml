@@ -1,0 +1,26 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+
+
+list <|-- todolist
+todolist <|-- item
+
+
+class item {
+String description
+String dueDate
+}
+
+class todolist{
+String title
+Item array
+}
+
+class list{
+todoList array
+}
+
+
+@enduml
